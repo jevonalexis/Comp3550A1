@@ -1,0 +1,38 @@
+body {
+  background: #2a363b;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+h2,h3{
+	color: #e8485f;
+}
+
+p,h4,li{
+	color: white;
+}
+
+#drawer{
+	background: #4a5655;
+}
+
+#image-collage{
+	max-width: 100%; height: auto;
+}
+
+.vimeo-youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+}
+.vimeo-youtube iframe,
+.vimeo-youtube object,
+.vimeo-youtube embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
