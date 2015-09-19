@@ -48,7 +48,7 @@
 				</div>
 			</nav>
 			
-			<form class="form-horizontal">
+			<form  name="a1" class="form-horizontal">
 				<fieldset>
 
 				<!-- Form Name -->
@@ -105,17 +105,17 @@
 				<div class="form-group">
 					<label class="col-md-4 control-label" for="text_email">Email</label>  
 					<div class="col-md-5">
-						<input id="text_email" name="text_email" type="text" placeholder="Enter Email" class="form-control input-md" required="">
+						<input id="text_email" name="text_email" onsubmit="checkEmail(document.a1.text_email)" type="email" placeholder="Enter Email" class="form-control input-md" required="">
    
 					</div>
 				</div>
 
 				<!--Telephone-->
 				<div class="form-group">
-					<label class="col-md-4 control-label" for="text_email">Telephone</label>  
+					<label class="col-md-4 control-label" for="text_telephone">Telephone (xxx-xxx-xxxx)</label>  
 					<div class="col-md-5">
-						<input id="text_telephone" name="text_telephone" type="text" placeholder="xxx-xxx-xxxx" class="form-control input-md" required="">
-   
+						<input id="text_telephone" name="text_telephone" onkeyup="phoneNumber(document.a1.text_telephone)" type="text" placeholder="xxx-xxx-xxxx" class="form-control input-md" required="">
+						<span id="confirm_Message" class="confirm_Message"></span>
 					</div>
 				</div>
 

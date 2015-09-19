@@ -13,6 +13,7 @@ function checkPass(){
         password_confirm.style.backgroundColor = goodColor;
         message.style.color = goodColor;
         message.innerHTML = "Passwords Match!"
+		return true;
     }
     
     else{
@@ -20,5 +21,32 @@ function checkPass(){
         password_confirm.style.backgroundColor = badColor;
         message.style.color = badColor;
         message.innerHTML = "Passwords Do Not Match!"
+		return false;
     }
 }  
+
+    
+
+function phoneNumber(inputtxt){  
+  
+	var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;;  
+	var message = document.getElementById('confirm_Message');
+	
+    var goodColor = "#66cc66";
+	var badColor = "#ff6666";
+  
+	if(inputtxt.value.match(phoneno)){ 
+		text_telephone.style.backgroundColor = goodColor;
+		message.style.color = goodColor;
+		message.innerHTML = "Valid phone number"
+		return true;  
+	}  
+  
+	else{ 
+		text_telephone.style.backgroundColor = badColor;
+		message.style.color = badColor
+		message.innerHTML = "Not a valid phone number";  
+		return false;  
+	}  
+}  
+
