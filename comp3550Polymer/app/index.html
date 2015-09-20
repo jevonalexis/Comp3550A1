@@ -113,7 +113,7 @@
 
           <!-- Application sub title -->
           <div class="bottom bottom-container center horizontal layout">
-            <div class="bottom-title paper-font-subhead">Water is scarce. "Wat-Er" you doing about it?</div>
+            <div class="bottom-title paper-font-subhead">Water is scarce. "Wat-er" you doing about it?</div>
           </div>
 
         </paper-toolbar>
@@ -177,6 +177,7 @@
                 <div class="vimeo-youtube" >
                     <video width="500" height="281" controls id="watervid">
                       <source src="water_scarcity_video.mp4" type="video/mp4">
+                      <source src="water_scarcity_video.ogg" type="video/ogg">
                       Your browser does not support HTML5 video.
                     </video>
                 </div>
@@ -296,7 +297,7 @@
               <paper-material elevation = "1">
                 <h3 class="paper-font-display1"> Let's hear from you.</h3>
                 <p>
-                    "Wat-Er" some of the ways we can prevent or stop the scarcity of water. Leave your name and country along with a comment for others to see.
+                    "Wat-er" some of the ways we can prevent or stop the scarcity of water. Leave your name and country along with a comment for others to see.
                 </p>
                 <br>
                 <form id="comment-form">
@@ -351,6 +352,10 @@
                   <div class="mui-form-group">
                     <input type="password" class="mui-form-control" name="ti_password" id="ti_password" required>
                     <label class="mui-form-floating-label">Password</label>
+                  </div>
+                  <div class="mui-form-group">
+                    <input type="checkbox" class="mui-form-control" name="confirm" id="confirm" required>
+                    <label class="mui-form-floating-label">By clicking confirm you are agreeing to receiving our newsletters and updates.</label>
                   </div>
                   
                   <paper-fab icon="send" id="btn_signup" value="Submit" type="Submit" onclick="handleForm2()"></paper-fab>
