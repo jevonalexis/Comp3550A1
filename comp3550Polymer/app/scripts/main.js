@@ -37,7 +37,7 @@ function handleForm(){
 	var comment = form["ti_comment"].value;
 
 	if(name === ""){
-		alert("Let YOUR voice be hear. Please enter your name.");
+		alert("Let YOUR voice be heard. Please enter your name.");
 	}
 	else if(country === ""){
 		alert("Be the voice of YOUR country. Please state your country.");
