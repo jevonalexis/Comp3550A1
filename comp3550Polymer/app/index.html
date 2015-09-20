@@ -1,0 +1,380 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Polymer Starter Kit" />
+  <title>Water Scarcity</title>
+  <!-- Place favicon.ico in the `app/` directory -->
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PSK">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+  <!-- css for material design form -->
+  <link href="//cdn.muicss.com/mui-0.1.23/css/mui.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endreplace-->
+
+ 
+</head>
+
+<body  class="fullbleed layout vertical">
+  <span id="browser-sync-binding"></span>
+  <template is="dom-bind" id="app">
+
+    <paper-drawer-panel id="paperDrawerPanel">
+      <!-- Drawer Scroll Header Panel -->
+      <paper-scroll-header-panel drawer fixed>
+
+        <!-- Drawer Toolbar -->
+        <paper-toolbar id="drawerToolbar">
+          <span class="paper-font-title">Menu</span>
+        </paper-toolbar>
+
+        <!-- Drawer Content -->
+        <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
+          <a data-route="home" href="/">
+            <iron-icon icon="home"></iron-icon>
+            <span>Home</span>
+          </a>
+
+          <a data-route="problem" href="/problem">
+            <iron-icon icon="warning"></iron-icon>
+            <span>The Problem</span>
+          </a>
+
+          <a data-route="solution" href="/solution">
+            <iron-icon icon="build"></iron-icon>
+            <span>Possible Solutions</span>
+          </a>
+
+          <a data-route="comments" href="/comments">
+            <iron-icon icon="communication:forum"></iron-icon>
+            <span>Let's Hear from you</span>
+          </a>
+
+          <a data-route="stayconnected" href="/stayconnected">
+            <iron-icon icon="social:person-add"></iron-icon>
+            <span>Stay connected</span>
+          </a>
+
+          <a data-route="game" href="/game/game.html">
+            <iron-icon icon="av:games"></iron-icon>
+            <span>Game</span>
+          </a> 
+        </paper-menu>
+      </paper-scroll-header-panel>
+
+      <!-- Main Area -->
+      <paper-scroll-header-panel main condenses keep-condensed-header elevation="2">
+
+        <!-- Main Toolbar -->
+        <paper-toolbar id="mainToolbar" class="tall">
+          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+          <span class="flex"></span>
+
+          <!-- Application name -->
+          <div class="middle middle-container center horizontal layout">
+            <div class="app-name">Water Scarcity</div>
+          </div>
+
+          <!-- Application sub title -->
+          <div class="bottom bottom-container center horizontal layout">
+            <div class="bottom-title paper-font-subhead">Water is scare and water you doing about it?</div>
+          </div>
+
+        </paper-toolbar>
+
+        <!-- Main Content -->
+        <div class="content">
+          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+
+            <section data-route="home">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2"> Overview</h2>
+                <p>
+                  Water scarcity already affects every continent. Around 1.2 billion people, or almost one-fifth of the world's population, live in areas of physical scarcity, and 500 million people are approaching this situation. Another 1.6 billion people, or almost one quarter of the world's population, face economic water shortage (where countries lack the necessary infrastructure to take water from rivers and aquifers).
+                  <br/>
+                  Water scarcity is among the main problems to be faced by many societies and the World in the XXIst century. Water use has been growing at more than twice the rate of population increase in the last century, and, although there is no global water scarcity as such, an increasing number of regions are chronically short of water.
+                  <br/>
+                  Water scarcity is both a natural and a human-made phenomenon. There is enough freshwater on the planet for seven billion people but it is distributed unevenly and too much of it is wasted, polluted and unsustainably managed.
+                </p>
+              </paper-material>
+
+              <paper-material elevation="1">
+                <img id="image-collage" src="/images/collage.jpg" alt="collage" />
+              </paper-material>
+            </section>
+
+            <section data-route="problem">
+              <paper-material elevation = "1">
+                <h3 class="paper-font-display1"> What is the Problem?</h3>
+                <p>
+                    In the early 2000's there had been many debates on water scarcity and the proportionaly inverse relationship between water availability and population size. 
+                    <br/>
+                    Though at a global level there is more than sufficient water to meet all of humanity's needs water scarcity is still a problem. 
+                </p>
+                <h3> Causes </h3>
+                    <ol>
+                      <li>
+                        Just like wealth, water, is not distributed equally among countries as well as within them.
+                        <br/> For example, While there are several countries in the Middle east that water-stressed Brazil
+                        and Canada have more water than they can ever use. Yet areas of northeast Brazil are drought-prone.
+                      </li>
+                      <li>
+                        Access to water as a productive resource has infrustructural requirements. These infrustructural requirements are also unequally distributes among and within countries.  
+                      </li>
+                    </ol>
+                </paper-material>
+                <paper-material elevation="1">
+                <h3> Implications </h3>
+                <p>
+                    Currently, about 700 million persons in 43 countries live below the water-stress threshold of 1700 cubic metres per person. It is estimated that by 2025 that number would reach 3 billion, as water-stressed in China, India and Sub-Saharan Africa.
+                    <br/>
+                </p>
+                <p>
+                    Water stress is also reflected in ecological stress. River systems that no longer reach the sea,
+                    shrinking lakes and sinking groundwater tables are among the most noticeable symptoms of water overuse.
+                    <br/>
+                    Another cause for concern is the depletion of groundwater in South Asia. Ground water tables are falling by more than a metre a year in parts of India. This then puts future agricultural production at risk. 
+                </p>
+              </paper-material>
+              <paper-material elevation="1">
+              <h3> Video </h3>
+                <div class="vimeo-youtube" >
+                    <video width="500" height="281" controls id="watervid">
+                      <source src="water_scarcity_video.mp4" type="video/mp4">
+                      Your browser does not support HTML5 video.
+                    </video>
+                </div>
+              </paper-material>
+            </section>
+
+            <section data-route="solution">
+              <paper-material elevation = "1">
+                <h3 class="paper-font-display1"> What can be done?</h3>
+                    <ul>
+                      <li> Desalinization Technology </li>
+                      <li> Water Conservation</li>
+                      <li> Water Sharing Treaties</li>
+                    </ul>
+                
+              </paper-material>
+              <paper-material elevation= "2">
+                <h3> Desalinization technology </h3>
+                <p> 
+                  This system is described as filtering salty water through membranes and removing the salt through electrodialysis and reverse osmosis. 
+                  <br> This procedure has worked for about 130 nations in North Africa and the Middle East. With this system, these nations are currently producing six billion gallons of usable water a day.
+                  <br> Despite these improvements, only 2.3% of wastewater that is generated by municipalities is currently being recycled and reused. If water were saved by utilizing reclaimed water for irrigation in Tuscon, Arizona alone, 31,000 families could be supported from this amount
+                  <br> Globally implementing simple recycling and filtration systems would be a relatively easy task that would reap outstanding benefits. Making these global advancements would be a monetarily and environmentally friendly step in the right direction towards the reduction of global water scarcity
+                </p>
+              </paper-material>
+
+              <paper-material elevation= "2">
+                <h3> Water Conservation </h3>
+                <p> 
+                  The task of conserving water can also be conquered on a smaller scale, beginning with small improvements in individual homes. One solution is to develop and mandate more efficient household water heaters. In old homes with poor insulation, the time needed to heat up the water from a faucet or showerhead can often be extensive. With heated pipes and better insulation throughout the system, this wasted water would no longer be an issue as hot water would immediately pour from the faucet. In addition to conservation of water, heating costs would also be lower
+                  <br> 
+                </p>
+                <h4> More tips</h4>
+                <ul>
+                  <li> Check faucets, pipes and toilets for leaks </li>
+                  <li> Take shorter showers </li>
+                  <li> Turn off the water after you wet your toothbrush</li>
+                  <li> Use your dishwasher and clothes washer for only full loads</li>
+                  <li> Water your lawn only when it needs it</li>
+                  <li> Don't run the hose while washing your car</li>
+
+                </ul>
+                
+              </paper-material>
+
+              <paper-material elevation= "2">
+                <h3> Water Sharing Treaties </h3>
+                <p> 
+                Another solution to this problem, which tackles a different aspect of water scarcity, is to compose new multinational treaties to specify water sharing. There are currently a significant amount of treaties in effect regarding water, yet most of them don’t properly distribute. These ineffective treaties also cause apprehension between nations. Disputes over shared water resources have also led to violence and even international tension. Currently, watersheds of 261 major rivers are shared by two or more countries. 
+                </p>
+                <p> These new treaties would work towards eliminating unequal distribution so that areas with plentiful water resources would not be able to hoard them. Instead, the treaty would distribute the water according to the aridity and need of the region to assure appropriate allocation. A new multinational treaty would be exceedingly beneficial in resolving water disputes as well as reducing tension and animosity between nations.
+                </p>
+                <p>
+                  Hydrological interdependence is not an abstract
+                  concept. Two in every five people in the world
+                  live in international water basins shared by more
+                  than one country (table 1).
+                </p>
+              </paper-material>
+              <paper-material elevation="1">
+              <h3>Table 1. Thirty-nine countries receive most of their water from outside their borders</h3>
+                <table id="table" class="mui-table">
+                  <thead>
+                    <tr> 
+                      <th> Region </th>
+                      <th> Countries receiving between 50% and 75% of their water from external sources </th>
+                      <th> Countries receiving more than 75% of their water from external sources </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Arab States </td>
+                      <td>Iraq, Somalia, Sudan, Syrian Arab Republic</td>
+                      <td>Bahrain, Egypt, Kuwait </td>
+                    </tr>
+                    <tr>
+                      <td>East Asia and the Pacific </td>
+                      <td>Cambodia, Viet Nam</td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td>Latin America and the Caribbean </td>
+                      <td>Argentina, Bolivia, Paraguay, Uruguay </td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td>South Asia </td>
+                      <td> </td>
+                      <td>Bangladesh, Pakistan </td>
+                    </tr>
+                    <tr>
+                      <td>Sub-Saharan Africa </td>
+                      <td>Benin, Chad, Congo, Eritrea, Gambia, Mozambique, Namibia </td>
+                      <td>Botswana, Mauritania, Niger </td>
+                    </tr>
+                    <tr>
+                      <td>Central and Eastern Europe and CIS </td>
+                      <td>Azerbijan, Croatia, Latvia, Slovakia, Ukraine, Uzbekistan </td>
+                      <td>Hungary, Moldova, Romania, Serbia and Montenegroa,Turkmenistan </td>
+                    </tr>
+                    <tr>
+                      <td>High-income OECD </td>
+                      <td>Luxembourg </td>
+                      <td>Netherlands </td>
+                    </tr>
+                    <tr>
+                      <td>Other </td>
+                      <td>Israel </td>
+                      <td> </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </paper-material>
+            </section>
+
+            <section data-route="comments">
+              <paper-material elevation = "1">
+                <h3 class="paper-font-display1"> Let's hear from you.</h3>
+                <p>
+                    Water some of the ways we can prevent or stop the scarcity of water. Leave your name and country along with a comment for others to see.
+                </p>
+                <br>
+                <form id="comment-form">
+                  <legend class="form-legend">Share your thoughts</legend>
+                  <div class="mui-form-group">
+                    <input type="text" class="mui-form-control" name="ti_name" id="ti_name">
+                    <label class="mui-form-floating-label">Name</label>
+                  </div>
+                  <div class="mui-form-group">
+                    <input type="text" class="mui-form-control" name="ti_country" id="ti_country">
+                    <label class="mui-form-floating-label">Country</label>
+                  </div>
+                  <div class="mui-form-group">
+                    <textarea class="mui-form-control" name="ti_comment" id="ti_comment"></textarea>
+                    <label class="mui-form-floating-label">Comment</label>
+                  </div>
+                  <paper-fab icon="send" id="btn_submit" value="Submit" type="Submit" onclick="handleForm()"></paper-fab>
+                  <!-- <button type="submit" class="mui-btn" data-mui-style="raised">Submit</button> -->
+                </form>
+
+              </paper-material>
+
+              <!-- comments are dynamically added to this div -->
+              <div id="commentDiv"></div>
+            </section>
+
+            <section data-route="stayconnected"> 
+              <paper-material elevation="1">
+                <h3> Stay connected with us </h3>
+                <h4> Follow us on </h4>
+                <nav>
+                  <a href="https://www.facebook.com/WATER-Scarcity-593243177459944/timeline/"> <img src="images/facebook.png" alt="facebook" class="social-icon"> </a>
+                  <a href="https://plus.google.com/+water/posts"> <img src="images/google.png" alt="google plus" class="social-icon"> </a>
+                  <a href="https://instagram.com/waterconservation/"> <img src="images/instagram.png" alt="instagram" class="social-icon"> </a>
+                </nav>
+                <br>
+                <h4> Also Sign up for our newsletter for tips on conserving water and new on water scarcity</h4>
+                <form id="signup-form">
+                  <legend class="form-legend">Signup</legend>
+                  <div class="mui-form-group">
+                    <input type="text" class="mui-form-control" name="ti_name2" id="ti_name2" required>
+                    <label class="mui-form-floating-label">Name</label>
+                  </div>
+                  <div class="mui-form-group">
+                    <input type="tel" class="mui-form-control" name="ti_phone" id="ti_phone">
+                    <label class="mui-form-floating-label">Telephone (xxx-xxx-xxxx)</label>
+                  </div>
+                  <div class="mui-form-group">
+                    <input type="email" class="mui-form-control" name="ti_email" id="ti_email" required>
+                    <label class="mui-form-floating-label">Email</label>
+                  </div>
+                  <div class="mui-form-group">
+                    <input type="password" class="mui-form-control" name="ti_password" id="ti_password" required>
+                    <label class="mui-form-floating-label">Password</label>
+                  </div>
+                  
+                  <paper-fab icon="send" id="btn_signup" value="Submit" type="Submit" onclick="handleForm2()"></paper-fab>
+                  <!-- <button type="submit" class="mui-btn" data-mui-style="raised">Submit</button> -->
+                </form>
+              </paper-material>
+              <div > <paper-toast id="signuptoast" class="toast" duration="5000" text = "Thank you for signing up"></paper-toast> </div>              
+            </section>
+
+          </iron-pages>
+        </div>
+      </paper-scroll-header-panel>
+    </paper-drawer-panel>
+    
+
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- my script -->
+  <script src="scripts/main.js"></script> 
+  <!-- script for material design form -->
+  <script src="//cdn.muicss.com/mui-0.1.23/js/mui.min.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>
