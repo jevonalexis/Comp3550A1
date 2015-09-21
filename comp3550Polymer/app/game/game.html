@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> It Takes A lot Of Blue To Stay Green</title>
+		<title>Drip Drip Drop</title>
 		<meta charset="utf-8">
+		<meta name="description" content=" Game">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/main.css">
 	</head>
-	<body  >
-		<div>
-		<button id="startGame" onclick="startgame(); disabled=true "> click to start game </button>
-		<canvas id="gameCanvas" width="800" height="600"> </canvas>
-		<script src="game.js"></script>
+	<body>
 		
-		<embed name="BackgroundMusic" src="music.mp3" loop="true" hidden="true" autostart="true">
+		<div id="gameLore">
+			<h2>IT TAKES A LOT OF BLUE TO GO GREEN</h2>
+			<p>
+				<strong>
+					On a planet covered with 70% water, beings composed of 60% water, 
+					still manage to waste this precious substance.<br>
+					Your mission, should you choose to accept it,is to save this neglected planet<br>
+					from a shortage that will propagate our own impending doom.<br>
+					It is up to you. Save the Earth. Save Mankind. Save the WATER!
+				</strong>
+			</p>	
+			
+			<h2>Instructions:</h2>
+			<p>	
+				
+				&nbsp &nbsp &nbsp Drip. Drip. Drop. Save the Water. Watch Out For The Clock.<br>
+				&nbsp &nbsp &nbsp Use the arrow keys to move the Bucket of Preservation Left and Right.<br>
+				&nbsp &nbsp &nbsp Collect the water drops from the Earth Pipe as they drip slowly towards shortage.<br>
+				&nbsp &nbsp &nbsp But don't forget time is upon us, keep an eye on your CLOCK.
+					
+			</p>
 		</div>
+		<!--Button used to start the game, is set to disabled after game is started. Canvas is also declared-->
+		<button id="startGame" onclick="startgame();disabled=true;"> click to start game </button>
+		<div id="gameId">
+			<canvas id="gameCanvas" width="800" height="600" tabindex="0"> </canvas>
+			<script src="game.js"></script>	
+		</div>
+		
+		<footer>
+			<p>
+				<strong>
+						You've taken the first step towards averting this crisis.<br>Now go spread the word. Tell a friend.
+						Help someone else save water.
+				</strong>
+			</p>
+		</footer>
 	</body>
-	<h1>Instructions:</h1>
-	<ol>
-		<li>Save the water drops</li><br>
-	</ol>	
+	
 </html> 
