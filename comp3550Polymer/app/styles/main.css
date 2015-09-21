@@ -89,3 +89,12 @@ table > tbody > tr:hover{
 .toast{
   z-index: -1; position:relative;
 }
+
+#load-button{
+  float: right;
+}
+
+
+paper-button{
+  color: white;
+}

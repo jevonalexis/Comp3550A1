@@ -43,12 +43,13 @@
   <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <!-- endbuild -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
 
- 
+
 </head>
 
 <body  class="fullbleed layout vertical">
@@ -94,7 +95,7 @@
           <a data-route="game" href="/game/game.html">
             <iron-icon icon="av:games"></iron-icon>
             <span>Game</span>
-          </a> 
+          </a>
         </paper-menu>
       </paper-scroll-header-panel>
 
@@ -113,7 +114,7 @@
 
           <!-- Application sub title -->
           <div class="bottom bottom-container center horizontal layout">
-            <div class="bottom-title paper-font-subhead">Water is scarce. "Wat-er" you doing about it?</div>
+            <div class="bottom-title paper-font-subhead">Water is scare and wat-er you doing about it?</div>
           </div>
 
         </paper-toolbar>
@@ -143,9 +144,9 @@
               <paper-material elevation = "1">
                 <h3 class="paper-font-display1"> What is the Problem?</h3>
                 <p>
-                    In the early 2000's there had been many debates on water scarcity and the proportionaly inverse relationship between water availability and population size. 
+                    In the early 2000's there had been many debates on water scarcity and the proportionaly inverse relationship between water availability and population size.
                     <br/>
-                    Though at a global level there is more than sufficient water to meet all of humanity's needs water scarcity is still a problem. 
+                    Though at a global level there is more than sufficient water to meet all of humanity's needs water scarcity is still a problem.
                 </p>
                 <h3> Causes </h3>
                     <ol>
@@ -155,7 +156,7 @@
                         and Canada have more water than they can ever use. Yet areas of northeast Brazil are drought-prone.
                       </li>
                       <li>
-                        Access to water as a productive resource has infrustructural requirements. These infrustructural requirements are also unequally distributes among and within countries.  
+                        Access to water as a productive resource has infrustructural requirements. These infrustructural requirements are also unequally distributes among and within countries.
                       </li>
                     </ol>
                 </paper-material>
@@ -169,7 +170,7 @@
                     Water stress is also reflected in ecological stress. River systems that no longer reach the sea,
                     shrinking lakes and sinking groundwater tables are among the most noticeable symptoms of water overuse.
                     <br/>
-                    Another cause for concern is the depletion of groundwater in South Asia. Ground water tables are falling by more than a metre a year in parts of India. This then puts future agricultural production at risk. 
+                    Another cause for concern is the depletion of groundwater in South Asia. Ground water tables are falling by more than a metre a year in parts of India. This then puts future agricultural production at risk.
                 </p>
               </paper-material>
               <paper-material elevation="1">
@@ -177,7 +178,6 @@
                 <div class="vimeo-youtube" >
                     <video width="500" height="281" controls id="watervid">
                       <source src="water_scarcity_video.mp4" type="video/mp4">
-                      <source src="water_scarcity_video.ogg" type="video/ogg">
                       Your browser does not support HTML5 video.
                     </video>
                 </div>
@@ -192,12 +192,12 @@
                       <li> Water Conservation</li>
                       <li> Water Sharing Treaties</li>
                     </ul>
-                
+
               </paper-material>
               <paper-material elevation= "2">
                 <h3> Desalinization technology </h3>
-                <p> 
-                  This system is described as filtering salty water through membranes and removing the salt through electrodialysis and reverse osmosis. 
+                <p>
+                  This system is described as filtering salty water through membranes and removing the salt through electrodialysis and reverse osmosis.
                   <br> This procedure has worked for about 130 nations in North Africa and the Middle East. With this system, these nations are currently producing six billion gallons of usable water a day.
                   <br> Despite these improvements, only 2.3% of wastewater that is generated by municipalities is currently being recycled and reused. If water were saved by utilizing reclaimed water for irrigation in Tuscon, Arizona alone, 31,000 families could be supported from this amount
                   <br> Globally implementing simple recycling and filtration systems would be a relatively easy task that would reap outstanding benefits. Making these global advancements would be a monetarily and environmentally friendly step in the right direction towards the reduction of global water scarcity
@@ -206,9 +206,9 @@
 
               <paper-material elevation= "2">
                 <h3> Water Conservation </h3>
-                <p> 
+                <p>
                   The task of conserving water can also be conquered on a smaller scale, beginning with small improvements in individual homes. One solution is to develop and mandate more efficient household water heaters. In old homes with poor insulation, the time needed to heat up the water from a faucet or showerhead can often be extensive. With heated pipes and better insulation throughout the system, this wasted water would no longer be an issue as hot water would immediately pour from the faucet. In addition to conservation of water, heating costs would also be lower
-                  <br> 
+                  <br>
                 </p>
                 <h4> More tips</h4>
                 <ul>
@@ -220,13 +220,13 @@
                   <li> Don't run the hose while washing your car</li>
 
                 </ul>
-                
+
               </paper-material>
 
               <paper-material elevation= "2">
                 <h3> Water Sharing Treaties </h3>
-                <p> 
-                Another solution to this problem, which tackles a different aspect of water scarcity, is to compose new multinational treaties to specify water sharing. There are currently a significant amount of treaties in effect regarding water, yet most of them don’t properly distribute. These ineffective treaties also cause apprehension between nations. Disputes over shared water resources have also led to violence and even international tension. Currently, watersheds of 261 major rivers are shared by two or more countries. 
+                <p>
+                Another solution to this problem, which tackles a different aspect of water scarcity, is to compose new multinational treaties to specify water sharing. There are currently a significant amount of treaties in effect regarding water, yet most of them don’t properly distribute. These ineffective treaties also cause apprehension between nations. Disputes over shared water resources have also led to violence and even international tension. Currently, watersheds of 261 major rivers are shared by two or more countries.
                 </p>
                 <p> These new treaties would work towards eliminating unequal distribution so that areas with plentiful water resources would not be able to hoard them. Instead, the treaty would distribute the water according to the aridity and need of the region to assure appropriate allocation. A new multinational treaty would be exceedingly beneficial in resolving water disputes as well as reducing tension and animosity between nations.
                 </p>
@@ -241,7 +241,7 @@
               <h3>Table 1. Thirty-nine countries receive most of their water from outside their borders</h3>
                 <table id="table" class="mui-table">
                   <thead>
-                    <tr> 
+                    <tr>
                       <th> Region </th>
                       <th> Countries receiving between 50% and 75% of their water from external sources </th>
                       <th> Countries receiving more than 75% of their water from external sources </th>
@@ -297,7 +297,7 @@
               <paper-material elevation = "1">
                 <h3 class="paper-font-display1"> Let's hear from you.</h3>
                 <p>
-                    "Wat-er" some of the ways we can prevent or stop the scarcity of water. Leave your name and country along with a comment for others to see.
+                    Water some of the ways we can prevent or stop the scarcity of water. Leave your name and country along with a comment for others to see.
                 </p>
                 <br>
                 <form id="comment-form">
@@ -314,17 +314,29 @@
                     <textarea class="mui-form-control" name="ti_comment" id="ti_comment"></textarea>
                     <label class="mui-form-floating-label">Comment</label>
                   </div>
-                  <paper-fab icon="send" id="btn_submit" value="Submit" type="Submit" onclick="handleForm()"></paper-fab>
+                  <paper-fab icon="send" id="btn_submit" value="Submit" type="Submit" class="btn" onclick="handleForm()"></paper-fab>
                   <!-- <button type="submit" class="mui-btn" data-mui-style="raised">Submit</button> -->
                 </form>
-
               </paper-material>
 
               <!-- comments are dynamically added to this div -->
               <div id="commentDiv"></div>
+              <div id="oldCommentDiv">
+                <paper-material class="newComment" elevation="1">
+                  <h3>Jane Bush of St Kitts </h3>
+                  <p>Don't water the gutter<br>Position your sprinklers so water lands on the lawn or garden, not on paved areas. Also, avoid watering on windy days.</p>
+                </paper-material>
+                <paper-material class="newComment" elevation="1">
+                  <h3>Kal El of Krypton </h3>
+                  <p>I think this site is SUPER awesome</p>
+                </paper-material>
+              </div>
+              <paper-button raised id="load-button" onclick="loadOldComments()">Load More</paper-button>
+
+              <div > <paper-toast id="no-post" class="toast" duration="5000" text = "No more posts to load"></paper-toast> </div>
             </section>
 
-            <section data-route="stayconnected"> 
+            <section data-route="stayconnected">
               <paper-material elevation="1">
                 <h3> Stay connected with us </h3>
                 <h4> Follow us on </h4>
@@ -357,28 +369,28 @@
                     <input type="checkbox" class="mui-form-control" name="confirm" id="confirm" required>
                     <label class="mui-form-floating-label">By clicking confirm you are agreeing to receiving our newsletters and updates.</label>
                   </div>
-                  
-                  <paper-fab icon="send" id="btn_signup" value="Submit" type="Submit" onclick="handleForm2()"></paper-fab>
+                  <paper-fab icon="send" id="btn_signup" value="Submit" type="Submit" onclick="handleForm2()" class="btn"></paper-fab>
                   <!-- <button type="submit" class="mui-btn" data-mui-style="raised">Submit</button> -->
                 </form>
               </paper-material>
-              <div > <paper-toast id="signuptoast" class="toast" duration="5000" text = "Thank you for signing up"></paper-toast> </div>              
+              <div > <paper-toast id="signuptoast" class="toast" duration="5000" text = "Thank you for signing up"></paper-toast> </div>
             </section>
 
           </iron-pages>
         </div>
       </paper-scroll-header-panel>
     </paper-drawer-panel>
-    
+
 
   </template>
 
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
   <!-- my script -->
-  <script src="scripts/main.js"></script> 
+  <script src="scripts/main.js"></script>
   <!-- script for material design form -->
   <script src="//cdn.muicss.com/mui-0.1.23/js/mui.min.js"></script>
+
   <!-- endbuild-->
 </body>
 
